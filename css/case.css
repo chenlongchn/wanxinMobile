@@ -1,0 +1,65 @@
+.succeed {
+	background-color: #fff;
+}
+
+.emotional-title li {
+	width: 22%;
+}
+
+.emotional-content {
+	padding: 1rem 0rem !important;
+}
+
+.love-text {
+	margin-top: .5rem;
+}
+
+.page li {
+	width: 50%;
+}
+
+.page li a {
+	width: 4rem;
+	line-height: 1.5rem;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid #ff5562;
+	font-size: .8rem;
+	color: #ff5562;
+	border-radius:.3rem ;
+}
+.consulting{
+	background-color: #fff;
+	margin-top: 1rem;
+}
+.consulting{
+	padding: .5rem;
+}
+.imga{
+	margin-top: 2rem;
+}
+.imga a{
+	width: 50%;
+}
+.imga a img{
+	width: 100%;
+}
+.consulting-title{
+	margin: 1rem 0 1.5rem 0;
+}
+.consulting-title p{
+	text-align: center;
+	font-size: .8rem;
+}
+.consulting-title p:nth-child(2){
+	margin-top: .5rem;
+}
+.reading{
+	background-color: #fff;
+	margin-top: .5rem;
+	padding: .5rem;
+}
+.nodispay{
+	display: block !important;
+}

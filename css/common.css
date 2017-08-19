@@ -1,0 +1,1009 @@
+/*设置html,body默认长宽百分比*/
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+
+/** 清除内外边距 **/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+
+/* structural elements 结构元素 */
+
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+
+/* list elements 列表元素 */
+
+pre,
+
+/* text formatting elements 文本格式元素 */
+
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+
+/* form elements 表单元素 */
+
+th,
+td
+/* table elements 表格元素 */
+
+{
+	margin: 0;
+	padding: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea
+/* for ie */
+
+{
+	font-family: "微软雅黑";
+	font-size: 12px;
+	background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+	font-style: normal;
+}
+
+
+/* 将斜体扶正 */
+
+code,
+kbd,
+pre,
+samp {
+	font-family: courier new, courier, monospace;
+}
+
+
+/* 统一等宽字体 */
+
+small {
+	font-size: 12px;
+}
+
+
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+legend {
+	color: #000;
+}
+
+
+/* for ie6 */
+
+fieldset,
+img {
+	border: 0;
+}
+
+
+/* img 搭车：让链接里的 img 无边框 */
+
+button,
+input,
+select,
+textarea {
+	font-size: 100%;
+}
+
+
+/* 使得表单元素在 ie 下能继承字体大小 */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.clear_left_float:after {
+	content: "";
+	clear: both;
+	display: block;
+	height: 0;
+}
+
+.clear_left_float>div,
+.clear_left_float>ul,
+.clear_left_float>li,
+.clear_left_float>dl,
+.clear_left_float>dd,
+.clear_left_float>dt,
+.clear_left_float>img,
+.clear_left_float>p,
+.clear_left_float>span,
+.clear_left_float>a,
+.clear_left_float>video {
+	float: left;
+}
+
+.ohidden {
+	overflow: hidden;
+}
+
+
+/*超出2行隐藏*/
+
+.overtwo {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+/*菜單*/
+#menu{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left:-100%;
+	background-color: #DA99A7;
+	z-index: 999;
+}
+#menu .titleswitch{
+	text-align: right;
+	padding: 1rem;
+}
+#menu i{
+	font-size: 1rem;
+}
+
+/*头部开始*/
+
+#el-title {
+	width: 100%;
+	height: 2.6rem;
+	background-color: #fff;
+}
+
+#el-title div>img {
+	height: 2.6rem;
+}
+
+.telcontent {
+	margin-top: .3rem;
+	margin-bottom: .3rem;
+	border-left: 1px solid #cccccc;
+	padding-left: .4rem;
+}
+
+.telcontent p img {
+	width: 1.2rem;
+	height: 1.1rem;
+}
+
+.el-tel p:nth-child(1) {
+	color: #ff5562;
+	font-size: .7rem;
+}
+
+.el-tel p:nth-child(2) {
+	color: #ff5562;
+	font-size: .6rem;
+	color: #414141;
+}
+
+.telcontent p span {
+	font-size: .8rem;
+	margin-left: .5rem;
+}
+
+#el-title div:nth-child(3) {
+	line-height: 2.6rem;
+	float: right;
+	margin-right: .5rem;
+}
+
+#el-title div:nth-child(3) img {
+	width: 1.5rem;
+	height: initial;
+}
+
+
+/*剜心又是开始*/
+
+.advantage {
+	margin: 1rem 0rem;
+	padding: 0rem 1rem;
+	background-color: #fff;
+}
+
+.advantage p {
+	font-size: 1rem;
+	text-align: center;
+	padding: .6rem;
+	color: #323232;
+}
+
+.advantage>img {
+	width: 100%;
+}
+.notitle>img{
+	width: 100%;
+}
+.notitle>p{
+	font-size: 1rem;
+	text-align: center;
+	padding: .6rem;
+	color: #323232;
+}
+
+
+/*底部开始*/
+
+.footer {
+	background-color: #fff;
+}
+
+.footer a {
+	display: block;
+	width: 24%;
+	background-color: #838383;
+	padding: .2rem;
+	box-sizing: border-box;
+	margin-right: 1.3%;
+	border-top-left-radius: .4rem;
+	border-top-right-radius: .4rem;
+	font-size: .6rem;
+}
+
+.footer .active-footer {
+	background-color: #ff5764;
+}
+
+.footer a img {
+	width: 1.5rem;
+	display: block;
+	margin: 0 auto;
+}
+
+.footer a p {
+	text-align: center;
+	color: #fff;
+}
+
+.footer a:nth-child(4) {
+	margin-right: 0;
+}
+
+
+/*首页开始*/
+
+#el-banner img {
+	width: 100%;
+}
+
+#el-content>p,
+.el-love>p {
+	font-size: 1rem;
+	text-align: center;
+	padding: .6rem;
+	color: #323232;
+}
+
+#el-content {
+	background-color: #efeff4;
+}
+
+#el-content>img,
+.el-love>img {
+	width: 100%;
+}
+
+.el-ulli {
+	margin: 1rem .5rem;
+}
+
+.el-ulli li:nth-child(2) {
+	margin: 0 .5%;
+}
+
+.el-ulli li {
+	width: 33%;
+}
+
+.el-ulli li img {
+	width: 100%;
+}
+
+.showlist {
+	margin-bottom: .6rem;
+	background-color: #ff5562;
+}
+
+.el-love {
+	background-color: #fff;
+	margin-top: -3rem;
+}
+
+.el-love>.titlep {
+	padding-top: 4rem;
+}
+
+.showlist div div:nth-child(1) {
+	width: 40%;
+	height: 5rem;
+}
+
+.showlist div div:nth-child(2) {
+	width: 60%;
+	background-color: #fff;
+	height: 4rem;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+}
+
+.showlist div div:nth-child(2) p {
+	padding-left: .5rem;
+	font-size: .7rem;
+	line-height: 1.3rem;
+}
+
+.showlist div div:nth-child(2) span {
+	color: #ff5562;
+	font-size: .8rem;
+}
+
+.showlist img {
+	width: 100%;
+}
+
+.contentlist {
+	padding: 1rem .5rem;
+}
+
+.contentlist ul li {
+	border-radius: .5rem;
+	overflow: hidden;
+}
+
+.showlist>div {
+	width: 100%;
+}
+
+.bottomtext {
+	padding: .3rem 0;
+	background-color: #ff5562;
+	font-size: .5rem;
+	color: #fff;
+	text-align: center;
+}
+
+.showlist>div:nth-child(1) {
+	border-radius: .5rem;
+	overflow: hidden;
+}
+
+.happiness {
+	background-color: #fff;
+}
+
+.happiness>p {
+	font-size: 1rem;
+	text-align: center;
+	padding: .6rem;
+	color: #323232;
+}
+
+.happiness>img {
+	font-size: 1rem;
+	text-align: center;
+	padding: .6rem;
+	color: #323232;
+	width: 93%;
+}
+
+
+/*ppt开始*/
+
+.swiper-container {
+	width: 100%;
+	height: 10rem;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-pagination-bullet {
+	width: .4rem !important;
+	height: .4rem !important;
+}
+
+.swiper-pagination-bullet-active {
+	background: #ff5562 !important;
+}
+
+.bottom {
+	width: 80%;
+	margin: 1rem auto;
+}
+
+.bottom img {
+	width: 100%;
+}
+
+.myinner {
+	overflow: hidden;
+	/*margin-bottom: 1rem;*/
+	width: 100%;
+}
+
+.pptimgs {
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+
+.pptimgs img {
+	width: 100%;
+}
+
+.el-ppttext {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 3rem;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.el-ppttext div:nth-child(1) {
+	width: 30%;
+	text-align: center;
+	line-height: 2.5rem;
+	color: #fff;
+	font-size: 1rem;
+}
+
+.el-ppttext div:nth-child(2) {
+	width: 70%;
+	color: #fff;
+	text-align: left;
+	font-size: .7rem;
+}
+
+.el-ppttext div:nth-child(2) {
+	padding: .4rem 0;
+	font-size: .6rem;
+}
+
+.my-bota {
+	width: 100%;
+}
+
+.swiper-container02 {
+	height: 16rem !important;
+}
+
+.my-texta {
+	margin-top: .5rem;
+}
+
+.my-texta a {
+	font-size: .9rem;
+	width: 50%;
+	color: #ff5562;
+}
+
+.my-texta i {
+	font-size: 1.2rem;
+}
+
+.swiper-slide>div {
+	width: 90%;
+}
+
+.swiper-slide {
+	width: 90%;
+}
+
+.swiper-slide img {
+	width: 100%;
+}
+
+.innerppt {
+	padding-bottom: 1rem;
+}
+
+.advantage {
+	padding-bottom: 1rem;
+}
+
+
+/*分享爱情开始*/
+
+.Share-love {
+	margin: 1rem 0rem;
+	background-color: #fff;
+}
+
+.Share-love>p {
+	font-size: 1rem;
+	text-align: center;
+	padding: .6rem;
+	color: #323232;
+}
+
+.Share-love>img {
+	width: 100%;
+}
+
+.Share-love li {
+	background-color: #f2f2f2;
+	padding: .5rem;
+	margin-bottom: .5rem;
+}
+
+.loveul {
+	margin-top: 1rem;
+}
+
+.love-li div:nth-child(1) {
+	width: 40%;
+}
+
+.love-li div:nth-child(2) {
+	width: 60%;
+}
+
+.love-li img {
+	width: 100%;
+}
+
+.love-li span {
+	padding-left: .2rem;
+}
+
+.love-text p {
+	padding-left: 1rem;
+}
+
+.love-text p:nth-child(1) {
+	font-size: .6rem;
+	font-weight: bold;
+	margin-bottom: .2rem;
+}
+
+.love-text p:nth-child(2) {
+	font-size: .5rem;
+	font-weight: bold;
+	margin-bottom: .2rem;
+}
+
+.love-text p:nth-child(3) {
+	font-size: .5rem;
+	color: #323232;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	margin-bottom: .5rem;
+}
+
+.love-text p:nth-child(4) a {
+	display: block;
+	background-color: #ff5764;
+	width: 3rem;
+	height: 1rem;
+	text-align: center;
+	line-height: 1rem;
+	color: #fff;
+	border-radius: .5rem;
+	font-size: .6rem;
+}
+
+
+/*情感资讯开始*/
+
+.emotional>p {
+	font-size: 1rem;
+	text-align: center;
+	padding: .6rem;
+	color: #323232;
+}
+
+.emotional>img {
+	width: 100%;
+}
+
+.emotional-content {
+	padding: 1rem;
+}
+
+.emotional-title li {
+	width: 30%;
+	text-align: center;
+	font-size: .8rem;
+	box-sizing: border-box;
+	line-height: 1.5rem;
+	cursor: pointer;
+}
+
+.content-text {
+	margin: 0 5%;
+}
+
+.title-active {
+	border-radius: .2rem;
+	border: 1px solid #ff5764;
+	color: #ff5764;
+}
+
+.active-box ul li:nth-child(1) {
+	width: 70%;
+}
+
+.active-box ul li:nth-child(2) {
+	width: 30%;
+}
+
+.active-box ul li:nth-child(2) img {
+	width: 100%;
+}
+
+.active-text p:nth-child(1) {
+	font-size: .6rem;
+	font-weight: bold;
+}
+
+.active-text p {
+	padding-right: 1rem;
+}
+
+.active-text p:nth-child(2) {
+	color: #323232;
+	font-size: .5rem;
+}
+
+.active-text p:nth-child(3) {
+	color: #323232;
+	font-size: .5rem;
+	margin-top: .2rem;
+}
+
+.active-box ul {
+	padding-top: .7rem;
+	padding-bottom: .7rem;
+	border-bottom: 1px solid #c1c1c1;
+}
+
+.active-box {
+	display: none;
+}
+
+.emotional-service>p {
+	font-size: 1rem;
+	text-align: center;
+	padding: .6rem;
+	color: #323232;
+}
+
+.emotional-service>img {
+	width: 100%;
+}
+
+.service {
+	width: 90%;
+	margin: 0 auto;
+	border-radius: .3rem;
+	overflow: hidden;
+}
+
+.service>div:nth-child(1) {
+	width: 20%;
+	background-color: #cf4b55;
+	text-align: center;
+	color: #fff;
+	line-height: 2rem;
+	font-size: .6rem;
+}
+
+.service>div:nth-child(2) {
+	width: 80%;
+	height: 2rem;
+	color: #fff;
+}
+
+.ShowPpt .swiper-slide {
+	background-color: #ff5764;
+}
+
+.ShowPpt .swiper-slide {
+	font-size: .7rem;
+}
+
+
+/*广告轮播开始*/
+
+html,
+body {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	background: #eee;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+.swiper-container {
+	width: 100%;
+	/* height: 100%; */
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.service {
+	margin: 1rem;
+}
+
+.myinput {
+	border: 1px solid #b5b5b5;
+	border-radius: .3rem;
+	line-height: 2rem;
+	width: 80%;
+	margin: 0 auto;
+	padding-left: .5rem;
+	background-color: #fff;
+	margin-bottom: .5rem;
+}
+
+.myinput span {
+	color: #c70000;
+}
+
+.myinput label {
+	width: 30%;
+	font-size: .7rem;
+	color: #949494;
+}
+
+.myinput input {
+	height: 2rem;
+	width: 66%;
+	border: 0;
+	font-size: .7rem;
+	outline: none;
+}
+
+.shuxian {
+	font-size: 1rem;
+	display: inline-block;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	color: #d3d3d3 !important;
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	height: 3rem;
+	font-size: .7rem;
+	border: 0px;
+	outline: none
+}
+
+.codeinput {
+	width: 84%;
+	margin: 0 auto;
+	line-height: 1.7rem;
+}
+
+.codeinput div:nth-child(1) {
+	width: 50%;
+	border: 1px solid #b5b5b5;
+	border-radius: .3rem;
+	overflow: hidden;
+}
+
+.codeinput input {
+	height: 2rem;
+	width: 100%;
+	border: 0px;
+	outline: none;
+	font-size: .7rem;
+}
+
+.codeinput div:nth-child(2) {
+	width: 20%;
+	margin-left: .5rem;
+	font-size: .7rem;
+	height: 2rem;
+}
+
+.codeinput div:nth-child(2) img {
+	width: 100%;
+}
+
+.codeinput div:nth-child(3) {
+	width: 26%;
+	text-align: right;
+	font-size: .7rem;
+}
+
+.my-bottom {
+	width: 84%;
+	margin: .5rem auto;
+}
+
+.my-bottom div {
+	width: 50%;
+	line-height: 2rem;
+}
+
+.my-bottom input {
+	width: 100%;
+	height: 1.7rem;
+	font-size: .7rem;
+}
+
+.my-bottom div:nth-child(1) input {
+	background-color: #ff5764;
+	border: 0;
+	color: #fff;
+	border-bottom-left-radius: .2rem;
+	border-top-left-radius: .2rem;
+}
+
+.my-bottom div:nth-child(2) input {
+	background-color: #fff;
+	border: 0;
+	color: #ff5764;
+	border-bottom-right-radius: .2rem;
+	border-top-right-radius: .2rem;
+}
+
+
+/*服务流程开始*/
+
+.Service-process {
+	background-color: #fff;
+	padding: 1rem .5rem;
+}
+
+.Service-process>p {
+	font-size: 1rem;
+	text-align: center;
+	padding: .6rem;
+	color: #323232;
+}
+
+.Service-process>img {
+	width: 100%;
+}
+
+.content-text p {
+	text-align: center;
+}
+
+.content-text p:nth-child(1) {
+	font-size: .8rem;
+	color: #000;
+	padding-top: 1.5rem;
+}
+
+.content-text p:nth-child(2) {
+	font-size: .6rem;
+	color: #000;
+	padding-top: .4rem;
+	letter-spacing: 5px;
+}
+
+.content-text p:nth-child(2) span {
+	padding-left: .5rem;
+}
+
+.content-text p:nth-child(3) {
+	font-size: 1rem;
+	color: #ff5764;
+	padding-top: .4rem;
+	letter-spacing: 5px;
+}
+
+.content-text p:nth-child(3) i {
+	font-size: .8rem;
+}
+
+.content-text p:nth-child(4) {
+	font-size: .6rem;
+	color: #737373;
+	padding-top: .4rem;
+}
